@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    /* box-sizing: border-box; */
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-image: url("images/bg-pattern-desktop.svg");
+    /* background-color: ; */
+}
+
+.content{
+    width: 27rem;
+    margin: 4rem auto auto 10rem;
+}
+
+h1{
+    font-size: 5rem;
+    margin-top: 7rem;
+    letter-spacing: 10px;
+}
+
+h1 span{
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+p{
+    line-height: 2;
+    margin-top: 15px;
+    color: hsl(0, 36%, 70%);
+}
+
+.form{
+    width: 500px;
+    margin-top: 50px;
+}
+
+form{
+    display: flex;
+}
+
+input[type="text"]{
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    border-color: hsl(0, 6%, 24%);
+    width: 64%;
+}
+
+.submit{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 1.5rem 3rem ;
+    width: 20%;
+    border: none;
+    border-radius: 80px;
+    
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}
+
+.mobile{
+    display: none;
+}
+
+.error_icon{
+    position: relative;
+    right: 80px;
+    /* top: 3px; */
+}
+
+.icon-error{
+    display: none;
+}
+
+.error{
+    color: hsl(0, 93%, 68%);
+    display: none;
+}
+
+@media (max-width: 1050px) and (min-width: 951px){
+    .image_1{
+        width: 55%;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 770px){
+    .image_1{
+        width: 45%;
+    }
+}
+
+@media (max-width: 769px) and (min-width: 377px){
+    .image_1{
+        width: 10%;
+    }
+}
+
+@media (max-width: 376px){
+    body{
+        overflow: hidden;
+    }
+
+    .image_1{
+        display: none;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .content{
+        margin: 50px auto;
+        width: auto;
+    }
+    
+    .form{
+        /* width: 370px; */
+    }
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type="text"]{
+        width: auto;
+        margin-left: 25px;
+    }
+
+    .mobile{
+        display: block;
+    }
+}
